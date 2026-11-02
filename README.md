@@ -355,3 +355,8 @@ This compiles and minifies all assets into the `dist/` directory.
 - **Project Name:** READIFY – Your Personal Digital Bookshelf
 - **Architecture:** Client-Side Single Page Application (SPA)
 - **Syllabus Coverage:** Units I, II, III, IV, and V (Detailed in `REACT_SYLLABUS_MAPPING.md`)
+
+## 🔗 Project Links
+
+- **Live Demo:** [Readify](https://readify-navy.vercel.app/)
+- **Source Code:** [GitHub Repository](https://github.com/inchara-dc/Readify)
