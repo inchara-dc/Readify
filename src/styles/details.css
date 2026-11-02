@@ -1,0 +1,295 @@
+/* ==========================================================================
+   BOOK DETAILS PAGE STYLES
+   ========================================================================== */
+
+.book-details-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.details-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Hero Card */
+.book-details-hero-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+}
+
+/* Cover Column */
+.hero-cover-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-cover-wrapper {
+  width: 100%;
+  max-width: 280px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4/5.5;
+  background-color: var(--color-surface-warm);
+}
+
+.hero-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hero-cover-wrapper:hover .hero-cover-image {
+  transform: scale(1.03);
+}
+
+.hero-status-tag {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Content Column */
+.hero-content-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-genre-date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.hero-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.hero-book-title {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.hero-book-author {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.hero-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.hero-rating-text {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Progress Box */
+.hero-progress-box {
+  background-color: var(--color-surface-warm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.progress-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-box-title {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.progress-box-pages {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+.progress-box-percent {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Quick Page Inline Controls */
+.quick-update-inline-form {
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inline-form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.inline-form-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.quick-page-input {
+  width: 90px;
+  padding: 6px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--color-text-main);
+}
+
+.quick-page-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Review & Notes Sections */
+.hero-review-section,
+.hero-notes-section {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  margin-bottom: 18px;
+}
+
+.hero-review-section {
+  background-color: #FCFAF7;
+  border-left: 3px solid var(--color-primary);
+}
+
+.hero-notes-section {
+  background-color: var(--color-surface-warm);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.hero-review-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+.hero-notes-text {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Book Not Found Card */
+.book-not-found-card {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  max-width: 540px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.not-found-icon {
+  color: var(--color-text-light);
+  margin-bottom: 6px;
+}
+
+.book-not-found-card h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-text-main);
+}
+
+.book-not-found-card p {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .book-details-hero-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 28px 24px;
+  }
+  .hero-cover-column {
+    align-items: flex-start;
+  }
+  .hero-cover-wrapper {
+    max-width: 200px;
+  }
+}
